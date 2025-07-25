@@ -1,0 +1,99 @@
+# Enhanced exclusions for public repository
+# Environment files and secrets
+.env
+.env.*
+*.env
+secrets/
+secret/
+private/
+private-keys/
+api-keys/
+
+# IDE and development-specific directories (keep in private repo only)
+.vscode/
+.claude/
+.idea/
+
+# Development and debug files
+debug_*.cjs
+test_*.cjs
+debug_*.css
+debug_*.js
+homebrew.mxcl.quartz.plist
+setup-launchagent.sh
+
+# Internal documentation and conversation logs
+CLAUDE.md
+CURSOR.md
+DRAFT_MANAGEMENT.md
+
+# Sensitive configuration files
+package-lock.json
+.npmrc
+.node-version
+vercel.json
+.env.example
+
+# Temporary files
+temp/
+tmp/
+
+# Cache directories
+.cache/
+cache/
+
+# Local configuration files
+config.local.*
+*.local.*
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# Test files that might contain sensitive data
+test-secrets.*
+*secret*.test.*
+
+# Additional security exclusions
+*.key
+*.pem
+*.p12
+*.pfx
+*.crt
+*.cert
+config.json
+secrets.json
+credentials.json
+
+# API and sensitive files
+api/ai-assistant.js
+api/
+
+# Content that should not be public
+content/docs/ai-features-documentation.md
+content/blog/ai-features-showcase.md
+content/blog/nvidia-computer-vision-projects.md
+content/demos/ai-interactive-demos.md
+content/art/Ritual - Essential Grimoire.md
+
+# Sanitization tools and documentation
+docs/sanitization-rules.md
+docs/sanitization-improvements.md
+scripts/sanitize.ts
+scripts/sanitize-config.json
+
+# Test files
+tests/
+quartz/components/__tests__/
+
+# Build and cache files
+public/
+.quartz-cache/
+prof/
+node_modules/
+coverage/
+.nyc_output/
+*.log
+*.tgz
+tsconfig.tsbuildinfo
